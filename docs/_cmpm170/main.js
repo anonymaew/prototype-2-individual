@@ -17,7 +17,7 @@ let caughtFish = false;
 let fishSpeed = 1;
 let retractSpeed = 1;
 
-characters = [
+let characters = [
 `
 ccccc
 c   c
@@ -34,7 +34,7 @@ llbll
 `,
 ];
 
-options = {};
+let options = {};
 
 function update() {
   if (!ticks) {
