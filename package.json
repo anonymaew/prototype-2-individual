@@ -15,7 +15,7 @@
     "watch_games": "light-server -s docs -w \"docs/**/* # # reload\"",
     "watch_lib": "rollup -c -w --bundleConfigAsCjs",
     "generate_reference": "typedoc src/main.ts --out ./docs/ref_document/",
-    "build": "cp docs/_cmpm170/main.js .; vite build; rm main.js"
+    "build": "cp docs/_cmpm170/main.js .; vite build --base=/prototype-2-individual/; rm main.js"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.0",
