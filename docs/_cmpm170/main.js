@@ -1,6 +1,6 @@
-title = "Harry's Game";
+let title = "Harry's Game";
 
-description = `test test`;
+let description = `test test`;
 
 let pins;
 let pins2;
