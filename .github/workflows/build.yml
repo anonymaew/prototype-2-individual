@@ -26,10 +26,7 @@ jobs:
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v2
       with:
-        path: |
-          ./docs/_cmpm170
-          ./docs/bundle.js
-          ./docs/index.html
+        path: './docs/'
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v2
