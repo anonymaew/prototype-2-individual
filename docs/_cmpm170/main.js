@@ -1,6 +1,6 @@
-title = "Harry's Game";
+let title = "Harry's Game";
 
-description = `test test`;
+let description = `test test`;
 
 let pins;
 let pins2;
@@ -17,7 +17,7 @@ let caughtFish = false;
 let fishSpeed = 1;
 let retractSpeed = 1;
 
-characters = [
+let characters = [
 `
 ccccc
 c   c
@@ -34,7 +34,7 @@ llbll
 `,
 ];
 
-options = {};
+let options = {};
 
 function update() {
   if (!ticks) {
@@ -126,3 +126,11 @@ function update() {
 }
 //testing
 // function projectile
+
+init({
+  update,
+  title,
+  description,
+  characters,
+  options: {},
+});
