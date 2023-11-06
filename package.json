@@ -15,7 +15,7 @@
     "watch_games": "light-server -s docs -w \"docs/**/* # # reload\"",
     "watch_lib": "rollup -c -w --bundleConfigAsCjs",
     "generate_reference": "typedoc src/main.ts --out ./docs/ref_document/",
-    "build": "cp docs/_cmpm170/main.js .; vite build --base=/prototype-2-individual/; rm main.js"
+    "build": "rollup -c --bundleConfigAsCjs"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^24.0.0",
@@ -27,9 +27,5 @@
     "tslib": "^2.4.1",
     "typedoc": "^0.23.23",
     "typescript": "^4.9.4"
-  },
-  "dependencies": {
-    "crisp-game-lib": "^1.1.1",
-    "vite": "^4.5.0"
   }
 }
