@@ -126,3 +126,11 @@ function update() {
 }
 //testing
 // function projectile
+
+init({
+  update,
+  title,
+  description,
+  characters,
+  options: {},
+});
